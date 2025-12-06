@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Health Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Patient Dashboard</h1>
+     <div id="alertBox" class="alert hidden"></div>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>❤️ Heart Rate</h3>
+        <p id="heartRate">-- bpm</p>
+      </div>
+      <div class="card">
+        <h3>🌬 Pressure</h3>
+        <p id="pressure">-- mmHg</p>
+      </div>
+      <div class="card">
+        <h3>🌡 Temperature</h3>
+        <p id="temperature">-- °F</p>
+      </div>
+      <div class="card">
+        <h3>🕒 Timestamp</h3>
+        <p id="timestamp">--</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
