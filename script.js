@@ -1,11 +1,11 @@
 const firebaseConfig = {
-        apiKey: "AIzaSyCcQZ2ULN_aJ7ywjnMchEmJnyBKV2bkPv0",
-        authDomain: "health-monitoring-e3c18.firebaseapp.com",
-        databaseURL:"https://health-monitoring-e3c18-default-rtdb.firebaseio.com/",
-        projectId: "health-monitoring-e3c18",
-        storageBucket: "health-monitoring-e3c18.appspot.com", 
-        messagingSenderId: "545283997480",
-        appId: "1:545283997480:web:113d658e61c34fbc5ada1d"
+        apiKey: "YOUR_API_KEY",
+        authDomain: "your_auth_domain",
+        databaseURL:"YOUR_DB_URL",
+        projectId: "YOUR_PROJECTID",
+        storageBucket: "YOUR_STORAGEBUCKET", 
+        messagingSenderId: "YOUR_MESSAGINGSENDERID",
+        appId: "YOUR_APPID"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
@@ -54,3 +54,4 @@ function checkAbnormal(data) {
     alertBox.classList.remove("critical");
   }
 }
+
